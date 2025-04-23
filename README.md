@@ -6,6 +6,8 @@ Enchant Menu adds a simple menu for modifying item enchantments.
 [<img alt="Requires Fabric API" height="72" src="https://i.imgur.com/bTus4wH.png"/>](https://modrinth.com/mod/fabric-api)
 [<img alt="Requires Fabric Kotlin" height="72" src="https://i.imgur.com/c1DH9VL.png"/>](https://modrinth.com/mod/fabric-language-kotlin)
 
+# Alpha Branch for testing only.
+
 ## Getting Started
 
 - Press X while ingame to open the interface
