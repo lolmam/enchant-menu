@@ -40,7 +40,7 @@ object EnchantMenuCompleteConfig : Config(EnchantMenu.MOD_ID), ConfigContainer {
                 }
             }
 
-        @ConfigEntry.BoundedInteger(min = 1, max = 100)
+        @ConfigEntry.BoundedInteger(min = 1, max = 255)
         @ConfigEntry.Slider
         var default = minimum
             set(value) {
