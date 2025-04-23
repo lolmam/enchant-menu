@@ -2,7 +2,6 @@
 
 Enchant Menu adds a simple menu for modifying item enchantments.
 
-[<img alt="Download on Modrinth" height="72" src="assets/icons/badge-dark.svg"/>](https://modrinth.com/mod/enchant-menu)
 [<img alt="Requires Fabric API" height="72" src="https://i.imgur.com/bTus4wH.png"/>](https://modrinth.com/mod/fabric-api)
 [<img alt="Requires Fabric Kotlin" height="72" src="https://i.imgur.com/c1DH9VL.png"/>](https://modrinth.com/mod/fabric-language-kotlin)
 
@@ -17,13 +16,18 @@ Enchant Menu adds a simple menu for modifying item enchantments.
 ## Features
 
 - Select enchantments from the list of possible enchantments
-- Select the level of enchantment from 1 to 10
+- Select the level of enchantment from 1 to 255
 - Supports custom enchantments
 - Searchable enchantments list
 - Toggle to surpass vanilla level limits
 - Toggle to allow incompatible enchantments
 - Toggle to allow treasure-only enchantments
 - Optional configuration with CompleteConfig
+
+
+## Fixes
+
+Use [Numerical Enchantments](https://modrinth.com/mod/numerical-enchantments) by [Microcontrollers](https://modrinth.com/user/Microcontrollers) to fix enchantment levels above 10 from showing incorrectly.
 
 ## Gallery
 
@@ -36,7 +40,3 @@ Enchant Menu adds a simple menu for modifying item enchantments.
 
 This mod is based on the enchanting tool included in NEI from the days of Tekkit Classic - Thanks to the original
 creator for the inspiration!
-
-## My mods
-
-[<img alt="Relativity" height="256" src="../../../relativity/blob/1.19/assets/icons/square-anim.png" />](https://github.com/eth0net/relativity)

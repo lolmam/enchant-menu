@@ -121,8 +121,9 @@ class EnchantMenuScreen(handler: EnchantMenuScreenHandler, playerInventory: Play
         context.matrices.translate(0.0, 0.0, 0.0)
 
         // level text
-        val level = handler.level.toString()
-        context.drawText(textRenderer, Text.literal(level), x + 23 - level.length * 3, y + 21, 0xFFFFFF, false)
+        val levelText = handler.level.toString()
+        val levelTextWidth = textRenderer.getWidth(levelText)
+        context.drawText(textRenderer, Text.literal(levelText), x + 23 - levelTextWidth / 2, y + 21, 0xFFFFFF, false)
 
         // level change buttons
         if (handler.level < EnchantMenuConfig.Levels.maximum) addDrawableChild(TexturedButtonWidget(
