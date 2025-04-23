@@ -14,7 +14,7 @@ object EnchantMenuCompleteConfig : Config(EnchantMenu.MOD_ID), ConfigContainer {
     @ConfigContainer.Transitive
     @ConfigEntries(includeAll = true)
     object Levels : ConfigGroup {
-        @ConfigEntry.BoundedInteger(min = 1, max = 100)
+        @ConfigEntry.BoundedInteger(min = 1, max = 255)
         @ConfigEntry.Slider
         var minimum = 1
             set(value) {
@@ -27,9 +27,9 @@ object EnchantMenuCompleteConfig : Config(EnchantMenu.MOD_ID), ConfigContainer {
                 }
             }
 
-        @ConfigEntry.BoundedInteger(min = 1, max = 100)
+        @ConfigEntry.BoundedInteger(min = 1, max = 255)
         @ConfigEntry.Slider
-        var maximum = 10
+        var maximum = 255
             set(value) {
                 field = if (value < minimum) {
                     minimum

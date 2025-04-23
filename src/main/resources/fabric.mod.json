@@ -3,7 +3,7 @@
   "id": "enchant-menu",
   "version": "${version}",
   "name": "Enchant Menu",
-  "description": "Enchant Menu adds a simple menu for modifying item enchantments.",
+  "description": "Enchant Menu adds a simple menu for modifying item enchantments. (Up to 255)",
   "authors": [
     "eth0net", "lol.mam"
   ],

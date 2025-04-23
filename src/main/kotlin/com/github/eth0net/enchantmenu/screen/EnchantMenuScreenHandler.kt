@@ -108,11 +108,13 @@ class EnchantMenuScreenHandler(
         if (hasEnchantment) {
             val enchantments = EnchantmentHelper.get(newStack)
                 .filter { (e, _) -> e != enchantment }
-                .toMap()
+                .toMutableMap()
             EnchantmentHelper.set(enchantments, newStack)
         } else {
             val lvl = if (level > enchantment.maxLevel && !levelUnlocked) enchantment.maxLevel else level
-            newStack.addEnchantment(enchantment, lvl)
+            val enchantments = EnchantmentHelper.get(newStack).toMutableMap()
+            enchantments[enchantment] = lvl
+            EnchantmentHelper.set(enchantments, newStack)
         }
 
         inventory.markDirty()

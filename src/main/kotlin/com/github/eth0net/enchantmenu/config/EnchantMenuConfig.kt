@@ -5,7 +5,7 @@ object EnchantMenuConfig {
 
     object Levels {
         var minimum = 1
-        var maximum = 10
+        var maximum = 255
         var default = minimum
     }
 
